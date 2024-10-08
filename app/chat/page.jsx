@@ -10,7 +10,7 @@ const Chat = () => {
     setMessages([...messages, { text: question, sender: "user" }]);
 
     try {
-      const response = await axios.post("https://api.nogresume.com:5050/chat", {
+      const response = await axios.post("https://api.nogresume.com/chat", {
         question,
       });
 
